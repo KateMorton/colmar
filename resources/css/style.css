@@ -1,0 +1,72 @@
+html {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  color: #686868;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dosis", Helvetica, sans-serif;
+  color: #202020;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+/*Header and nav bar*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: #CAEBF2;
+  position: fixed;
+  z-index: 1;
+}
+
+.branding {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.branding img {
+  height: 3rem;
+}
+
+h2 span {
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1.5rem;
+}
+
+nav a {
+  font-family: "Dosis", Helvetica, sans-serif;
+  color: #202020;
+  text-decoration: none;
+  padding: 16px;
+}
+
+/*banner section*/
+
+.banner {
+  display: flex;
+  align-items: center;
+}
