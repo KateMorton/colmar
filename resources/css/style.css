@@ -28,9 +28,11 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
-  background-color: #CAEBF2;
+  background-color: #caebf2;
   position: fixed;
+  width: 100%;
   z-index: 1;
+  border-bottom: .016rem solid #686868;
 }
 
 .branding {
@@ -48,6 +50,7 @@ header {
 
 h2 span {
   font-weight: 400;
+  color: #686868;
 }
 
 nav {
@@ -61,12 +64,47 @@ nav a {
   font-family: "Dosis", Helvetica, sans-serif;
   color: #202020;
   text-decoration: none;
-  padding: 16px;
+  padding: 1rem;
 }
 
 /*banner section*/
 
 .banner {
+  background-color: #efefef;
   display: flex;
   align-items: center;
+  width: 100%;
+  padding-top: 4rem;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  padding: 1.5rem;
+  word-spacing: .25rem;
+}
+
+.banner-text h2 {
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  word-spacing: .5rem;
+  color: #686868;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+}
+
+.button p {
+  color: white;
+  padding: 0.5rem;
+  background-color: #ff3b3f;
+  font-size: 1rem;
+  margin: 2rem 1.5rem 1.5rem 1.5rem;
 }
