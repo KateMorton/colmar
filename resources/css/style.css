@@ -17,9 +17,10 @@ h1 {
   font-weight: 400;
 }
 
-h2 {
+h2, h3, h4, h5 {
   font-weight: 800;
 }
+
 
 /*Header and nav bar*/
 
@@ -77,10 +78,20 @@ nav a {
   padding-top: 4rem;
 }
 
-.banner img {
+.banner-image {
   width: 60%;
-  height: auto;
   padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner-text {
+  width: 30%;
+  margin-right: 10%;
 }
 
 .banner-text h1 {
@@ -96,15 +107,113 @@ nav a {
   color: #686868;
 }
 
-.button {
-  width: 100%;
+/*.button {
+  max-width: 100%;
+  text-align: center;
+  margin: 2rem 1.5rem 1.5rem 1.5rem;
+  background-color: #ff3b3f;
+  padding: 0.5rem;
+  border-radius: 2px;
+}*/
+
+.button a {
+  background-color: #ff3b3f;
+  margin: 2rem 1.5rem 1.5rem 1.5rem;
+  display: block;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 0.5rem;
+  max-width: 100%;
   text-align: center;
 }
 
-.button p {
-  color: white;
-  padding: 0.5rem;
-  background-color: #ff3b3f;
+
+/*Information section*/
+
+.info {
+  display: flex;
+  /*align-items: center;*/
+  background-color: #fafafa;
+}
+
+.article {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 60%;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.image img {
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+
+.text h2 {
+  font-size: 2rem;
+  padding: 0 0 1.5rem 0;
+}
+
+.text p {
   font-size: 1rem;
-  margin: 2rem 1.5rem 1.5rem 1.5rem;
+  line-height: 1.5;
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+
+.text h5 {
+  font-size: .75rem;
+}
+
+/*Link to more info section*/
+
+.info-links {
+  display: flex;
+  width: 40%;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 2rem 1.5rem 2rem 1rem;
+}
+
+.link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0rem 1rem 1rem 0;
+}
+
+.link img {
+  width: 35%;
+  height: auto;
+}
+
+.link .text {
+  margin-left: 1rem;
+}
+
+.link h3 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.link p {
+  padding-bottom: 0.5rem;
+}
+
+
+.link a {
+  background-color: #ff3b3f;
+  text-decoration: none;
+  color: white;
+  font-size: .75rem;
+  display: block;
+  padding: .25rem .5rem;
+  width: 50%;
+  border-radius: 2px;
 }
