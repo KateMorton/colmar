@@ -130,6 +130,12 @@ nav a:hover {
   text-align: center;
 }
 
+@media only screen and (max-width: 1100px) {
+  .banner-text h1 {
+    font-size: 3rem;
+  }
+}
+
 
 /*Information section*/
 
@@ -228,6 +234,28 @@ nav a:hover {
   background-color: #efefef;
 }
 
+@media only screen and (max-width: 1240px){
+  .links h3 {
+    font-size: 1.25rem;
+  }
+
+  .links p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 975px){
+  .links h3 {
+    font-size: 1.05rem;
+  }
+
+  .links p {
+    font-size: 0.7rem;
+  }
+}
+
+
+
 /*Learning section*/
 
 .container {
@@ -282,6 +310,40 @@ nav a:hover {
 .info2 p {
   line-height: 1.5;
   height: 4.5rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .start-learning {
+    margin-top: 2rem;
+  }
+
+ .learning_menu {
+    margin: 0.5rem;
+  }
+
+  .info2 h3 {
+    font-size: 1.05rem;
+  }
+
+  .info2 h4 {
+    margin: 8px 0;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .info2 p {
+    line-height: 1.5;
+    height: 4.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .info2 p {
+    line-height: 1.7;
+    font-size: 0.8rem;
+    height: 3.75rem;
+  }
 }
 
 /*Thesis Exhibit section*/
