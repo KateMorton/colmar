@@ -76,6 +76,29 @@ nav a:hover {
   color: #ff3b3f;
 }
 
+.nav_mobile {
+  display: none;
+}
+
+/*header -media queries for smaller screen sizes*/
+
+@media only screen and (max-width: 750px) {
+  .branding {
+    display: none;
+  }
+
+  .nav_dt {
+    display: none;
+  }
+
+  .nav_mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 /*banner section*/
 
 .banner {
@@ -130,9 +153,53 @@ nav a:hover {
   text-align: center;
 }
 
+/* Banner section - media queries for smaller screen sizes*/
+
 @media only screen and (max-width: 1100px) {
   .banner-text h1 {
     font-size: 3rem;
+  }
+}
+
+
+@media only screen and (max-width: 875px) {
+  .banner-text h1 {
+    font-size: 2.5rem;
+    padding: 1.25rem;
+  }
+
+  .banner-text h2 {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-image {
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .banner-text {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .banner-text h1 {
+    font-size: 4rem;
+    padding: 1.25rem;
+  }
+
+  .banner-text h2 {
+    font-size: 1.25rem;
+    padding: 1rem;
+    margin-top: 2rem 0 1.5rem 0;
   }
 }
 
@@ -164,7 +231,7 @@ nav a:hover {
 
 .text p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   font-style: italic;
   padding-bottom: 2rem;
 }
@@ -172,6 +239,11 @@ nav a:hover {
 .text h5 {
   font-size: .75rem;
 }
+
+p span {
+  font-size: 1rem;
+}
+
 
 /*Link to more info section*/
 
@@ -183,7 +255,7 @@ nav a:hover {
 
 .column {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;;
   align-items: center;
   flex-direction: column;
   height: auto;
@@ -226,13 +298,15 @@ nav a:hover {
   font-size: .75rem;
   display: block;
   padding: .25rem .5rem;
-  width: 50%;
+  width: 6rem;
   border-radius: 2px;
 }
 
 .highlighted {
   background-color: #efefef;
 }
+
+/* Information section - media queries for smaller screen sizes*/
 
 @media only screen and (max-width: 1240px){
   .links h3 {
@@ -254,6 +328,47 @@ nav a:hover {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .article {
+    display: none;
+  }
+
+  .info-links {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .column {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .links {
+    width: 100%;
+    margin: 0.5rem 0 0.5rem 0;
+    box-shadow: none;
+  }
+
+  .links img {
+    padding-left: 1rem;
+  }
+
+  .links .text {
+    padding-right: 1rem;
+  }
+
+  .links h3 {
+    font-size: 2rem;
+  }
+
+  .links p {
+    font-size: 1.25rem;
+  }
+
+  .links a {
+    font-size: 1rem;
+  }
+}
 
 
 /*Learning section*/
@@ -277,6 +392,10 @@ nav a:hover {
   flex-wrap: wrap;
   width: 80%;
   margin: 1rem 3.5rem 1rem 3.5rem;
+}
+
+.learning_mobile {
+  display: none;
 }
 
 .learning_menu {
@@ -312,6 +431,8 @@ nav a:hover {
   height: 4.5rem;
 }
 
+/* Learning section - media queries for smaller screen sizes*/
+
 @media only screen and (max-width: 1240px) {
   .start-learning {
     margin-top: 2rem;
@@ -346,6 +467,62 @@ nav a:hover {
   }
 }
 
+@media only screen and (max-width: 875px) {
+  .learning_menu {
+    display: none;
+    }
+
+  .start-learning {
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1rem 1rem 2rem 1rem;
+    }
+
+  .learning_mobile, .learning_mobile ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .learning_mobile li {
+    width: 25%;
+    background-color: #caebf2;
+    border: 0.016rem solid #BEBEBE;
+    margin: 0.25rem;
+    padding: 1rem;
+  }
+
+  li a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #202020;
+    margin: 1rem 0 2rem 0;
+  }
+
+  li a:hover {
+    color: #ff3b3f;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .start-learning {
+    margin: 1rem 0 0 0;
+  }
+
+  .learning_mobile li {
+    width: 40%;
+    background-color: #caebf2;
+    border: 0.016rem solid #BEBEBE;
+    margin: 0.25rem;
+    padding: 1rem;
+  }
+}
+
+
 /*Thesis Exhibit section*/
 
 .thesis {
@@ -377,6 +554,19 @@ video {
 
 .thesis .links {
   margin-bottom: 1.5rem;
+}
+
+/*thesis section - media queries for smaller screens*/
+
+@media only screen and (max-width: 750px) {
+  .article_mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .links_mobile {
+    display: none;
+  }
 }
 
 /*footer*/
