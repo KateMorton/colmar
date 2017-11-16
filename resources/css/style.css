@@ -200,7 +200,7 @@ nav a:hover {
   .banner-text h2 {
     font-size: 1.25rem;
     padding: 1rem;
-    margin-top: 2rem 0 1.5rem 0;
+    margin: 2rem 0 1.5rem 0;
   }
 }
 
@@ -655,8 +655,9 @@ footer p {
   color: #ff3b3f;
 }
 
-footer div {
-  padding: 1rem 1.5rem 0 0;
+footer nav {
+  align-items: flex-start;
+  padding: 0 1.5rem 0 0;
 }
 
 footer a {
